@@ -1,74 +1,86 @@
-<!DOCTYPE html>
-<html lang="pl-PL">
-<head>
-<meta charset="utf-8">
-<title>Formularz podróżniczy</title>
-</head>
+<!DOCTYPE html> 
+<html lang="pl-PL"> 
+<head> 
+<meta charset="utf-8"> 
+<title>Formularz podróżniczy</title> 
+</head> 
+
 <body bgcolor="#66FFFF">
+<A HREF="index.html">Wróć</A>   
+<center><h1>ANKIETA PODRÓŻNICZA</h1></center> 
 
-<h1><center>ANKIETA PODRÓŻNICZA</center></h1>
+<form enctype="text/plain" action="mailto:zgracjan844@gmail.com" method="post"> 
 
-<form action="mailto:zgracjan844@gmail.com" method="post" enctype="text/plain">
+<table border="0" width="100%" cellspacing="20"> 
 
-<h3>Twoje dane</h3>
+<tr height="150"> 
+<td width="400">
 <b>Imię i nazwisko:</b><br>
-<input type="text" name="imie_nazwisko" size="40" placeholder="Wpisz swoje imię i nazwisko"><br><br>
+<input name="imie_nazwisko" size="35"><br><br>
 
 <b>Wiek:</b><br>
 <input type="number" name="wiek" min="1" max="120"><br><br>
 
 <b>Adres e-mail:</b><br>
-<input type="email" name="email" size="40" placeholder="np. jan.kowalski@gmail.com"><br><br>
-  
+<input type="email" name="email" size="35"><br><br>
 
-<h3>Pytania o podróże</h3>
+<b>Hasło (do logowania w serwisie podróżniczym):</b><br>
+<input type="password" name="haslo" maxlength="12">
+</td>
 
-<b>Ile razy w roku wyjeżdżasz na wakacje?</b><br>
-<input type="radio" name="wyjazdy" value="0">0
-<input type="radio" name="wyjazdy" value="1-2" checked>1–2
-<input type="radio" name="wyjazdy" value="3-5">3–5
-<input type="radio" name="wyjazdy" value="więcej niż 5">Więcej niż 5<br><br>
+<td width="400" valign="top">
+<center><font size="5" color="black"><b>Ile razy w roku wyjeżdżasz na wakacje?</b></font></center><br>
+<input type="radio" name="wyjazdy" value="0"> 0<br>
+<input type="radio" name="wyjazdy" value="1-2" checked> 1–2<br>
+<input type="radio" name="wyjazdy" value="3-5"> 3–5<br>
+<input type="radio" name="wyjazdy" value="więcej niż 5"> Więcej niż 5<br><br>
 
 <b>Jak najczęściej podróżujesz?</b><br>
-<input type="checkbox" name="podroz" value="samolotem">Samolotem
-<input type="checkbox" name="podroz" value="pociągiem">Pociągiem
-<input type="checkbox" name="podroz" value="samochodem">Samochodem
-<input type="checkbox" name="podroz" value="rowerem">Rowerem
-<input type="checkbox" name="podroz" value="autokarem">Autokarem<br><br>
+<input type="checkbox" name="podroz" value="samolotem"> Samolotem<br>
+<input type="checkbox" name="podroz" value="pociągiem"> Pociągiem<br>
+<input type="checkbox" name="podroz" value="samochodem"> Samochodem<br>
+<input type="checkbox" name="podroz" value="rowerem"> Rowerem<br>
+<input type="checkbox" name="podroz" value="autokarem"> Autokarem
+</td>
 
+<td width="400" valign="top">
 <b>Jaki rodzaj noclegu wybierasz?</b><br>
-<input type="checkbox" name="nocleg" value="hotel">Hotel
-<input type="checkbox" name="nocleg" value="hostel">Hostel
-<input type="checkbox" name="nocleg" value="kemping">Kemping
-<input type="checkbox" name="nocleg" value="apartament">Apartament<br><br>
+<input type="checkbox" name="nocleg" value="hotel"> Hotel<br>
+<input type="checkbox" name="nocleg" value="hostel"> Hostel<br>
+<input type="checkbox" name="nocleg" value="kemping"> Kemping<br>
+<input type="checkbox" name="nocleg" value="apartament"> Apartament<br><br>
 
-<input type="checkbox" name="newsletter" value="tak">Chcę otrzymywać newsletter podróżniczy<br>
-<input type="checkbox" name="konkursy" value="tak">Chcę brać udział w konkursach na loty lotnicze<br><br>
+<input type="checkbox" name="newsletter" value="tak"> Chcę otrzymywać newsletter podróżniczy<br>
+<input type="checkbox" name="konkursy" value="tak"> Chcę brać udział w konkursach na loty lotnicze
+</td>
+</tr>
 
-<h3>Twoje preferencje</h3>
-
-<b>Wybierz miejsce, które najbardziej chcesz odwiedzić:</b><br>
-<input type="text" name="miejsce" size="40" placeholder="Np. Japonia, Meksyk, Islandia"><br><br>
+<tr height="200">
+<td valign="top">
+<b style="color:red;">Wybierz miejsce, które najbardziej chcesz odwiedzić:</b><br>
+<input type="text" name="miejsce" size="35"><br><br>
 
 <b>Co najbardziej lubisz podczas podróży?</b><br>
-<input type="checkbox" name="preferencje" value="zwiedzanie zabytków">Zwiedzanie zabytków
-<input type="checkbox" name="preferencje" value="odpoczynek na plaży">Odpoczynek na plaży
-<input type="checkbox" name="preferencje" value="góry i natura">Góry i natura
-<input type="checkbox" name="preferencje" value="sport i aktywność">Sport i aktywność
-<input type="checkbox" name="preferencje" value="kuchnia i lokalne jedzenie">Kuchnia i lokalne jedzenie<br><br>
+<input type="checkbox" name="preferencje" value="zwiedzanie zabytków"> Zwiedzanie zabytków<br>
+<input type="checkbox" name="preferencje" value="odpoczynek na plaży"> Odpoczynek na plaży<br>
+<input type="checkbox" name="preferencje" value="góry i natura"> Góry i natura<br>
+<input type="checkbox" name="preferencje" value="sport i aktywność"> Sport i aktywność<br>
+<input type="checkbox" name="preferencje" value="kuchnia i lokalne jedzenie"> Kuchnia i lokalne jedzenie
+</td>
 
-<h3>Dodatkowe informacje</h3>
-
+<td valign="top">
 <b>Najlepsza podróż, jaką odbyłeś/łaś:</b><br>
-<textarea name="najlepsza_podroz" cols="50" rows="4" placeholder="Opisz krótko swoją najlepszą podróż..."></textarea><br><br>
+<textarea name="najlepsza_podroz" cols="40" rows="4"></textarea><br><br>
 
 <b>Twoje wymarzone miejsce podróży:</b><br>
-<textarea name="wymarzone_miejsce" cols="50" rows="2" placeholder="Dokąd chciałbyś/chciałabyś pojechać?"></textarea><br><br>
+<textarea name="wymarzone_miejsce" cols="40" rows="3"></textarea><br><br>
 
-<input type="checkbox" name="konkurs_bilety" value="tak">Chcę brać udział w konkursach na bilety lotnicze<br><br>
+<input type="checkbox" name="konkurs_bilety" value="tak"> Chcę brać udział w konkursach na bilety lotnicze
+</td>
 
+<td valign="top">
 <b>Wybierz kontynent, na który chciałbyś pojechać:</b><br>
-<select name="kontynent" size="3">
+<select name="kontynent" size="4">
 <option selected>Europa</option>
 <option>Azja</option>
 <option>Ameryka Północna</option>
@@ -78,13 +90,19 @@
 <option>Antarktyda</option>
 </select><br><br>
 
-<input type="submit" value="WYŚLIJ">
-<input type="reset" value="CZYŚĆ">
-<input type="button" value="NIESPODZIANKA">
+<b>Na ile podobał Ci się formularz:</b><br>
+<input type="range"><br><br>
+<progress>Proszę czekać...</progress>
+</td>
+</tr>
 
+<tr height="150">
+<td><button onclick="alert('Nie ma żadnej niespodzianki')" style="height:80px; width:250px;">Przycisk niespodzianka</button></td>
+<td><input type="reset" value="Reset" style="height:80px; width:150px;"></td>
+<td><input type="submit" value="Wyślij formularz" style="height:80px; width:200px;"></td>
+</tr>
+
+</table> 
 </form>
-
-</body>
+</body> 
 </html>
-
-
