@@ -1,98 +1,75 @@
-<!DOCTYPE html> 
-  <html lang="pl-PL"> 
-<html> 
-     <head> 
-             <meta charset="utf-8"> 
-             <title>ZADANIE FORMULARZ</title> 
-     </head> 
- <body bgcolor="#1E90FF"> 
-<center><h1>Ankieta Podróżnicza</h1></center> 
-<form enctype="text/plain" action="mailto:zgracjan844@gmail.com" subject="formularz_dane" method="Post"> 
-  <TABLE> 
- <TR height="100"> 
-                          <TD width="500">
-<p><h3>Twoje dane</h3></p>
-                               <b>Imię nazwisko:</b> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
-&nbsp  
-&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<input name="imie nazwisko:" size="22">  
-                               <br><br> 
-                               <b>Wiek:</b>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  
-&nbsp &nbsp &nbsp &nbsp <input name="Wiek:" size="22">  
-                               <br><br> 
-                             <b>Adres e-mail:</b> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
-&nbsp &nbsp &nbsp <input name="Adres e-mail:" size="22"
-                               <br><br> 
-Ile razy w roku wyjeżdzasz na wakacje?
-<br><br>
-<input type="checkbox" name="liczba wyjazdów" value="0"> 0 
-<br><br>
-<input type="checkbox" name="wyjazdy" value="1-2">1-2 
-<br><br>
-<input type="checkbox" name="wyjazdy" value="3-5">3-5
-<br><br>
-<input type="checkbox" name="wyjazdy" value="Więcej niż 5 ">Więcej niż 5 
-                            <br></br> 
-<center></center><font size="5" color="green"><b>Jak najczęściej podróżujesz?</b></font><br></center> 
-                              <select>
-                                 <option value="Samolotem">Samolotem</option> 
-                                 <option value="Samochodem">Samochodem</option> 
-                                 <option value="Rowerem">Rowerem</option> 
-                                 <option value="Pociągiem">Pociągiem</option> 
-                                 <option value="Autokarem">Autokarem</option> 
-                              </select>
-                           <br></br>
-<br><br>
-<input type="checkbox" name="newsletter podróżniczy" value="newsletter podróżniczy">Chcę otrzymywać newsletter podróżniczy
-<br><br>
-<input type="checkbox" name="konkursy" value="konkursy">Chcę brać udział w konkursach na loty lotnicze
-<br><br>
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+<meta charset="utf-8">
+<title>Ankieta podróżnicza</title>
+</head>
+<body bgcolor="#66FFFF">
 
-    <TD width="500"> 
-      <p><h3>Twoje preferencje</h3></p>
-                               <b>Napisz miejsce,które najbardziej chcesz odwiedzić::</b> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
-&nbsp  
-&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<input name="Napisz miejsce,które najbardziej chcesz odwiedzić::" size="25">  
-                               <br></br>
-    Ile razy w roku wyjeżdzasz na wakacje?
-<br><br>
-<input type="checkbox" name="liczba wyjazdów" value="0"> 0 
-<br><br>
-<input type="checkbox" name="wyjazdy" value="1-2">1-2 
-<br><br>
-<input type="checkbox" name="wyjazdy" value="3-5">3-5
-<br><br>
-<input type="checkbox" name="wyjazdy" value="Więcej niż 5 ">Więcej niż 5 
-                            <br></br> 
-  </TABLE> 
-</form> 
- </body> 
+<h1><center>ANKIETA PODRÓŻNICZA</center></h1>
+
+<form action="mailto:zgracjan844@gmail.com" method="post" enctype="text/plain">
+
+<h3>Twoje dane</h3>
+<b>Imię i nazwisko:</b><br>
+<input type="text" name="imie_nazwisko" size="40"><br><br>
+
+<b>Wiek:</b><br>
+<input type="text" name="wiek" size="5"><br><br>
+
+<b>Adres e-mail:</b><br>
+<input type="email" name="email" size="40"><br><br>
+
+<h3>Pytania o podróże</h3>
+
+<b>Ile razy w roku wyjeżdżasz na wakacje?</b><br>
+<input type="radio" name="wyjazdy" value="0">0<br>
+<input type="radio" name="wyjazdy" value="1-2">1–2<br>
+<input type="radio" name="wyjazdy" value="3-5">3–5<br>
+<input type="radio" name="wyjazdy" value="więcej niż 5">Więcej niż 5<br><br>
+
+<b>Jak najczęściej podróżujesz?</b><br>
+<input type="checkbox" name="podroz" value="samolotem">Samolotem<br>
+<input type="checkbox" name="podroz" value="pociągiem">Pociągiem<br>
+<input type="checkbox" name="podroz" value="samochodem">Samochodem<br>
+<input type="checkbox" name="podroz" value="rowerem">Rowerem<br>
+<input type="checkbox" name="podroz" value="autokarem">Autokarem<br><br>
+
+<b>Jaki rodzaj noclegu wybierasz?</b><br>
+<input type="checkbox" name="nocleg" value="hotel">Hotel<br>
+<input type="checkbox" name="nocleg" value="hostel">Hostel<br>
+<input type="checkbox" name="nocleg" value="kemping">Kemping<br>
+<input type="checkbox" name="nocleg" value="apartament">Apartament<br><br>
+
+<input type="checkbox" name="newsletter" value="tak">Chcę otrzymywać newsletter podróżniczy<br>
+<input type="checkbox" name="konkursy" value="tak">Chcę brać udział w konkursach na loty lotnicze<br><br>
+
+<h3>Twoje preferencje</h3>
+
+<b>Wybierz miejsce, które najbardziej chcesz odwiedzić:</b><br>
+<input type="text" name="miejsce" size="40"><br><br>
+
+<b>Co najbardziej lubisz podczas podróży?</b><br>
+<input type="checkbox" name="preferencje" value="zwiedzanie zabytków">Zwiedzanie zabytków<br>
+<input type="checkbox" name="preferencje" value="odpoczynek na plaży">Odpoczynek na plaży<br>
+<input type="checkbox" name="preferencje" value="góry i natura">Góry i natura<br>
+<input type="checkbox" name="preferencje" value="sport i aktywność">Sport i aktywność<br>
+<input type="checkbox" name="preferencje" value="kuchnia i lokalne jedzenie">Kuchnia i lokalne jedzenie<br><br>
+
+<h3>Dodatkowe informacje</h3>
+
+<b>Najlepsza podróż, jaką odbyłeś/łaś:</b><br>
+<textarea name="najlepsza_podroz" cols="50" rows="4"></textarea><br><br>
+
+<b>Twoje wymarzone miejsce podróży:</b><br>
+<textarea name="wymarzone_miejsce" cols="50" rows="2"></textarea><br><br>
+
+<input type="checkbox" name="konkurs_bilety" value="tak">Chcę brać udział w konkursach na bilety lotnicze<br><br>
+
+<input type="submit" value="WYŚLIJ">
+<input type="reset" value="RESET">
+
+</form>
+
+</body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
