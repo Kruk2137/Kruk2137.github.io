@@ -14,7 +14,7 @@
 <table border="0" width="100%" cellspacing="20"> 
 
 <tr height="150"> 
-<td width="400">
+<td width="400" valign="top">
 <b>Imię i nazwisko:</b><br>
 <input name="imie_nazwisko" size="35"><br><br>
 
@@ -29,7 +29,7 @@
 </td>
 
 <td width="400" valign="top">
-<center><font size="5" color="black"><b>Ile razy w roku wyjeżdżasz na wakacje?</b></font></center><br>
+<b>Ile razy w roku wyjeżdżasz na wakacje?</b><br>
 <input type="radio" name="wyjazdy" value="0"> 0<br>
 <input type="radio" name="wyjazdy" value="1-2" checked> 1–2<br>
 <input type="radio" name="wyjazdy" value="3-5"> 3–5<br>
@@ -40,23 +40,22 @@
 <input type="checkbox" name="podroz" value="pociągiem"> Pociągiem<br>
 <input type="checkbox" name="podroz" value="samochodem"> Samochodem<br>
 <input type="checkbox" name="podroz" value="rowerem"> Rowerem<br>
-<input type="checkbox" name="podroz" value="autokarem"> Autokarem
-</td>
+<input type="checkbox" name="podroz" value="autokarem"> Autokarem<br><br>
 
-<td width="400" valign="top">
 <b>Jaki rodzaj noclegu wybierasz?</b><br>
 <input type="checkbox" name="nocleg" value="hotel"> Hotel<br>
 <input type="checkbox" name="nocleg" value="hostel"> Hostel<br>
 <input type="checkbox" name="nocleg" value="kemping"> Kemping<br>
-<input type="checkbox" name="nocleg" value="apartament"> Apartament<br><br>
+<input type="checkbox" name="nocleg" value="apartament"> Apartament<br>
+<input type="checkbox" name="nocleg" value="inne"> Inne<br><br>
 
-<input type="checkbox" name="newsletter" value="tak"> Chcę otrzymywać newsletter podróżniczy<br>
-<input type="checkbox" name="konkursy" value="tak"> Chcę brać udział w konkursach na loty lotnicze
+Jeśli zaznaczyłeś INNE to napisz swoje<br>
+ulubione jedzenie poniżej.<br>
+Maks 100 znaków<br><br>
+<input name="nocleg_inny" size="35" maxlength="100">
 </td>
-</tr>
 
-<tr height="200">
-<td valign="top">
+<td width="400" valign="top">
 <b style="color:red;">Wybierz miejsce, które najbardziej chcesz odwiedzić:</b><br>
 <input type="text" name="miejsce" size="35"><br><br>
 
@@ -67,7 +66,9 @@
 <input type="checkbox" name="preferencje" value="sport i aktywność"> Sport i aktywność<br>
 <input type="checkbox" name="preferencje" value="kuchnia i lokalne jedzenie"> Kuchnia i lokalne jedzenie
 </td>
+</tr>
 
+<tr height="200">
 <td valign="top">
 <b>Najlepsza podróż, jaką odbyłeś/łaś:</b><br>
 <textarea name="najlepsza_podroz" cols="40" rows="4"></textarea><br><br>
@@ -75,12 +76,15 @@
 <b>Twoje wymarzone miejsce podróży:</b><br>
 <textarea name="wymarzone_miejsce" cols="40" rows="3"></textarea><br><br>
 
+<input type="checkbox" name="newsletter" value="tak"> Chcę otrzymywać newsletter podróżniczy<br>
+<input type="checkbox" name="konkursy" value="tak"> Chcę brać udział w konkursach na loty lotnicze<br>
 <input type="checkbox" name="konkurs_bilety" value="tak"> Chcę brać udział w konkursach na bilety lotnicze
 </td>
 
 <td valign="top">
 <b>Wybierz kontynent, na który chciałbyś pojechać:</b><br>
-<select name="kontynent" size="4">
+<button type="button" onclick="document.getElementById('kontynenty').style.display='block'">Pokaż listę</button><br><br>
+<select id="kontynenty" name="kontynent" size="4" style="display:none;">
 <option selected>Europa</option>
 <option>Azja</option>
 <option>Ameryka Północna</option>
@@ -88,12 +92,11 @@
 <option>Afryka</option>
 <option>Australia</option>
 <option>Antarktyda</option>
-</select><br><br>
-
-<b>Jak bardzo lubisz podróżować:</b><br>
-<input type="range"><br><br>
-<progress>Proszę czekać...</progress>
+</select>
 </td>
+
+<TD>Jak bardzo lubisz podróżować:<input type="range"> <br>
+ Proszę czekać &nbsp &nbsp &nbsp &nbsp &nbsp <progress>Proszę czekać</progress> </TD> 
 </tr>
 
 <tr height="150">
@@ -104,6 +107,6 @@
 
 </table> 
 </form>
+
 </body> 
 </html>
-
